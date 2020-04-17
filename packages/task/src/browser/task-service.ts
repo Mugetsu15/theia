@@ -1015,10 +1015,7 @@ export class TaskService implements TaskConfigurationClient {
             title: taskInfo
                 ? `Task: ${taskInfo.config.label}`
                 : `Task: #${taskId}`,
-            destroyTermOnClose: true,
-            attributes: {
-                'remote': 'false'
-            }
+            destroyTermOnClose: true
         }, {
             taskId,
             widgetOptions: { area: 'bottom' },
